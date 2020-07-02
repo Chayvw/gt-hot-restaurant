@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+<body>
+    <div class="containter">
+        <div class="jumbotron">
+            <h1 class="text-center">Reservations</h1>
+        </div>
+    </div>
+    <div class="buttons" id="buttons">
+        <div class="container">
+            <!--View Tables-->
+            <a href= "./table.html"><button type="button" class="btn btn-secondary btn-lg">View Tables</button></a>
+            <!--Go Home-->
+            <a href= "./home.html"><button type="button" class="btn btn-secondary btn-lg">Home</button></a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12">
+            <!--Reservation Form-->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">Reservations</h4>
+                </div>
+                <div class="panel-body">
+                    <form>
+                        <!--Reservation Name-->
+                        <div class= "form-group">
+                            <label id="reserve-name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <!--Reservation Number-->
+                        <div class= "form-group">
+                            <label id="reserve-number">Phone Number</label>
+                            <input type="text" class="form-control" id="number">
+                        </div>
+                        <!--Reservation Email-->
+                        <div class= "form-group">
+                            <label id="reserve-email">Email</label>
+                            <input type="text" class="form-control" id="email">
+                        </div>
+                          <!--Reservation Party-->
+                          <div class= "form-group">
+                            <label id="reserve-party">Party Count</label>
+                            <input type="interger" class="form-control" id="party">
+                        </div>
+                        <!--Submit-->
+                        <button type="submit" class="btn btn-primary submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
